@@ -17,12 +17,13 @@ body * {
   width: 360px;
   height: 712px;
   border: 1px solid red;
-  margin: auto;
+  margin: 56px auto 32px;
 }
 
 #profile {
   text-align: center;
   border: 1px solid pink;
+  padding: 24px;
 }
 
 #profile img {
@@ -35,4 +36,5 @@ body * {
   font-weight: 500;
   line-height: 24px;
   border: 1px solid skyblue;
+  margin-top: 8px;
 }
