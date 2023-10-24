@@ -62,3 +62,8 @@ ul li a {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
+
+ul li a:hover {
+  border: 1.5px solid white;
+  background: rgba(255, 255, 255, 0.05);
+}
