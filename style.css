@@ -7,11 +7,19 @@
 :root {
   --text-color: #FFFFFF;
   --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --highlight-color: rgba(255, 255, 255, 0.2);
 }
 
 .light {
   --text-color: #000000;
   --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -39,6 +47,7 @@ body * {
 #profile img {
   width: 112px;
   border: 1px solid yellow;
+  margin: auto;
 }
 
 #profile p {
@@ -68,8 +77,8 @@ ul li a {
   font-weight: 500;
 
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--stroke-color);
+  background: var(--surface-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 
@@ -77,8 +86,8 @@ ul li a {
 }
 
 ul li a:hover {
-  border: 1.5px solid #FFFFFF;
-  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid var(--text-color);
+  background: var(--surface-color-hover);
 }
 
 #social-links {
@@ -100,13 +109,13 @@ ul li a:hover {
 }
 
 #social-links a:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--highlight-color);
 }
 
 footer {
   text-align: center;
   font-size: 14px;
   font-weight: 400;
-  padding: 24px;
+  padding: 24px 0px;
   border: 1px solid salmon;
 }
